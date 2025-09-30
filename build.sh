@@ -124,7 +124,8 @@ compile() {
 		--enable-shared \
 		--disable-verbose \
 		--enable-threaded-resolver \
-		--enable-ipv6
+		--enable-ipv6 \
+		--with-ca-path=/system/etc/security/cacerts
 	checkExitCode $?
 	# clean
 	make clean
