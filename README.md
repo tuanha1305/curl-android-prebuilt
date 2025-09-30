@@ -38,7 +38,7 @@ git submodule init && git submodule update
 * Build
 ```
 chmod 755 build_for_android.sh
-./build_for_android.sh
+./build.sh
 ```
 
 * Incremental build
