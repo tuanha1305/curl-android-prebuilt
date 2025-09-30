@@ -37,17 +37,8 @@ git submodule init && git submodule update
 
 * Build
 ```
-chmod 755 build_for_android.sh
+chmod 755 build.sh
 ./build.sh
-```
-
-* Incremental build
-```
-sed -i'' 's/make clean/#make clean/' jni/compile-zlib.sh
-sed -i'' 's/make clean/#make clean/' jni/compile-openssl.sh
-sed -i'' 's/make clean/#make clean/' build_for_android.sh
-sed -i'' 's/rm -rf $BUILD_PATH/#rm -rf $BUILD_PATH/' build_for_android.sh
-./build_for_android.sh
 ```
 
 ## Binary and Library
